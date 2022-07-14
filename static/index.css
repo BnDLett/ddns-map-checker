@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+}
+
+#main2{
+    border: 1px gray solid;
+    border-radius: 5%;
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(26, 43, 43);
+}
+
+#main{
+    padding-bottom: 50px;
+}
+
+#additional{
+    padding-top: 50px;
+}
+
+#button{
+    padding: 50px;
+}
+
+#link{
+    color: rgb(137, 146, 228);
+}
