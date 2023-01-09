@@ -1,1 +1,1 @@
-web:gunicorn app:mindustrymapchecker
+web:gunicorn app:main
