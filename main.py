@@ -57,4 +57,4 @@ def secondary():
     return render_template("old_index.html", a1="Unknown")
     
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=Port)
+    app.run(debug=True, host="https://mdn-map-cycle-web-service.onrender.com", port=Port)
