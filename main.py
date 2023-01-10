@@ -37,21 +37,6 @@ class Server():
 
 app = Flask(__name__, static_url_path='/static')
 
-
-def mapthingy():
-    while True:
-        for i in range(4):
-            server = Server("mindustry.ddns.net", 1000*(i+1))
-            z = server.get_status()["map"]
-            with open('maps.txt', 'r') as x:
-                x = x.read()
-                with open('maps.txt', 'a') as y:
-                    if z.lower() not in x.lower():
-                        y.write(f"{z}\n")
-
-x = threading.Thread(None, mapthingy, None)
-x.start()
-
 @app.route("/")
 def home():
     return render_template("index.html", a1="Unknown")
