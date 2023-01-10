@@ -4,6 +4,9 @@ from struct import unpack
 from time import time
 import threading
 
+Port = os.environ.get('PORT')
+print(Port)
+
 class Server():
     def __init__(self, host, server_port = 6567, socketinput_port = 6859):
         self.host = host
@@ -69,4 +72,4 @@ def secondary():
     return render_template("old_index.html", a1="Unknown")
     
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=80)
+    app.run(debug=True, host="0.0.0.0", port=Port)
