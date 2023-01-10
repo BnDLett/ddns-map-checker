@@ -32,4 +32,4 @@ def secondary():
 print(3)
     
 if __name__ == "__main__":
-    app.run(debug=True, host="localhost", port=Port)
+    app.run(debug=True, host="44.233.151.27", port=Port)
