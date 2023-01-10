@@ -32,4 +32,4 @@ def secondary():
 print(3)
     
 if __name__ == "__main__":
-    app.run(debug=True, host="https://mdn-map-cycle-web-service.onrender.com", port=Port)
+    app.run(debug=True, host="0.0.0.0", port=Port)
