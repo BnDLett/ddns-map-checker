@@ -1,34 +1,33 @@
-<!DOCTYPE html>
-
 <html>
     <head>
-        <title>DDNS Map Cycle</title>
+        <title>MDN Map Check</title>
         <link rel="stylesheet" href="..\static\index.css">
         <link rel="icon" href="..\static\icon.png">
     </head>
     <body>
-        <img src="..\static\icon.png" alt="MDN Logo" id="mdnLogo" height="75px"> <br> <h2>An unofficial MDN website by Hatsune Miku#6287 </h2>
-        <div id="main2">
-            <div id="main">
-                <h1>DDNS map cycle checker</h1>
-                Check what maps are in cycle for the mindustry server "mindustry.ddns.net"!
-                <br>You can start by typing the map name into the prompt below.<br><br>**Sorry for the bad web design, LOL.
-                 You also just need to put an underscore in place of the spaces in a map name. <br><br>
+        <div id="main">
+            <div id="line"></div>
+            <div id="image_div"><img src="..\static\icon.png" alt="MDN Logo" id="mdnLogo" height="75px"> <br></div> <h2 id="stuff">An unofficial MDN website</h2>
+            <div id="spacer_sec"></div><div id="spacer_sec"></div>
+            <div id="main_body">
+                <div id="title">MDN Map Check</div>
+                <p id="sub">Check what maps are in cycle on mindustry.ddns.net, you may start by entering a map name in the prompt below.</p>
+                <div id="form_div">
+                    <form method="POST">
+                        <input name="text" id="text_input" placeholder="Map">
+                        <input type="submit" id="submit_input">
+                    </form>
+                    <div id="title3">Map status: {{a1}}</div>
+                </div>
             </div>
-            <form method="POST">
-                <input name="text">
-                <input type="submit">
-            </form><br>
-            <div id="additional">
-                Map status: {{a1}}
+            <div id="spacer_sec"></div>
+            <div id="sec_body">
+                <div id="title">How does this service work?</div>
+                <div id="title2">Getting the map</div>
+                <p id="sub">By scanning over the ports in the mindustry.ddns.net server, we can get the map name. With this map name, we may open a file and put it in to a file for later use.</p>
+                <div id="title2">Checking for requested map</div>
+                <p id="sub">Whenever you input a map name in the form and press submit, the back-end sees it and checks a file and see if the inputted name is in it.</p>
             </div>
-
-            <h1>How does this work?</h1>
-            By using the "get_status" function of <a href="https://github.com/VozdyxDev/pydustry" id ="link">pydustry</a>, we can use utilize that to get the current map on a server, read a file with all 
-            of the maps and if the file doesn't already contain the map then it'll add the map to the file. It is constantly doing this.<br><br>
-            As for actually checking for the map, we use a html form that creates textbox that can then be accessed by <a href="https://github.com/pallets/flask" id="link">flask</a>. At which 
-            when the "submit" button is pressed, we then make the received data lowercase and check if it is in the maps file. It isn't too efficient of a way of checking, however it'll work for now 
-            seeing as I was in a small rush to get this done.<br><br>
         </div>
     </body>
 </html>

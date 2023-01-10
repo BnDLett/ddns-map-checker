@@ -1,29 +1,135 @@
+@font-face {
+    font-family: mindustry;
+    src: url('mindustry.woff') format('woff');
+}
+
 body{
     text-align: center;
-    background-color: darkslategray;
+    background-color: #36393f;
     color: white;
+    font-family:mindustry;
 }
 
-#main2{
-    border: 1px gray solid;
-    border-radius: 5%;
-    width: 50%;
-    margin-left: 25%;
-    background-color: rgb(26, 43, 43);
+#main_body{
+    border-top: 1px white solid;
+    background-color: #2f3136;
+    border: 1px #2f3136 solid;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 2%;
+    padding-top: 2%;
 }
 
-#main{
-    padding-bottom: 50px;
+#sec_body{
+    background-color: #2f3136;
+    border: 1px #2f3136 solid;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-size: 125%;
 }
 
-#additional{
-    padding-top: 50px;
+#spacer{
+    padding-top: 2%;
+    border-top: 1px white solid;
+}
+#spacer_sec{
+    padding-top: 2%;
 }
 
-#button{
-    padding: 50px;
+#title{
+    color:white;
+    font-size: 200%;
+}
+#title2{
+    color:white;
+    font-size: 175%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#title3{
+    color:white;
+    font-size: 150%;
 }
 
-#link{
-    color: rgb(137, 146, 228);
+#image_div{
+    padding-top: 1%;
+    width:30%;
+    margin-left: 35%;
+}
+
+#sub{
+    color:rgb(184, 184, 184);
+}
+
+#stuff{
+    background-color: #36393f;
+    position: fixed;
+    width: 22%;
+    margin-left: 39%; 
+}
+
+#line{
+    border-top: 1px white solid;
+    margin-top: 6.85%;
+    margin-left: -1%;
+    position: fixed;
+    width: 103%;
+}
+
+#text_input{
+    outline-style: none;
+    color: white;
+    border: 2px #36393f solid;
+    border-radius: 5px;
+    width: 500px;
+    height: 32px;
+    background-color: #36393f;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: mindustry;
+    text-align: center;
+    font-size: 110%;
+    transition: 250ms;
+}
+#text_input:hover{
+    transition: 250ms;
+    border: 2px #484c53 solid;
+}
+#text_input:focus{
+    transition: 250ms ease-in-out;
+    border: 2px #27292e solid;
+}
+
+#submit_input{
+    outline-style: none;
+    color: white;
+    border: 2px #549123 solid;
+    border-radius: 5px;
+    width: 64px;
+    height: 32px;
+    background-color: #549123;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: mindustry;
+    transition: 250ms;
+}
+#submit_input:hover{
+    transition: 250ms ease-in-out;
+    border: 2px #3d6919 solid;
+    background-color: #3d6919;
+}
+#submit_input:focus{
+    transition: 0ms;
+    border: 2px #63ca71 solid;
+    background-color: #63ca71;
 }
