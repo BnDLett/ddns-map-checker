@@ -4,7 +4,7 @@ from struct import unpack
 from time import time
 import threading
 
-Port = os.environ.get('PORT')
+Port = 1000
 print(Port)
 
 class Server():
