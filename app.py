@@ -30,6 +30,3 @@ print(2)
 def secondary():
     return render_template("old_index.html", a1="Unknown")
 print(3)
-    
-if __name__ == "__main__":
-    app.run(debug=True, host="44.233.151.27", port=Port)
