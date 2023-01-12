@@ -70,4 +70,4 @@ def secondary():
 
 @app.route("/invite")
 def invite():
-    return render_template("discord_invite_redirect")
+    return render_template("discord_invite_redirect.html")
