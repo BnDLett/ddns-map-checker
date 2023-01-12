@@ -67,3 +67,7 @@ def index_post():
 @app.route("/secondary")
 def secondary():
     return render_template("old_index.html", a1="Unknown")
+
+@app.route("/invite")
+def invite():
+    return render_template("discord_invite_redirect")
